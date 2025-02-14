@@ -31,30 +31,43 @@
 
 .main-nav-link:link,
 .main-nav-link:visited {
+  border-radius: 2px;
   display: inline-block;
   text-decoration: none;
-  color: #333;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   transition: all 0.3s;
+  color: #333;
 }
 
 .main-nav-link:hover,
-.main-nav-link:active {
+.main-nav-link:focus {
   color: #cf711f;
+}
+
+/* Active class to keep the selected link highlighted */
+.main-nav-link.active {
+  color: #cf711f;
+  font-weight: bold;
 }
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
   padding: 1.2rem 2.4rem;
-  border-radius: 9px;
+  border-radius: 20px;
   color: #fff;
   background-color: #e67e22;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #cf711f;
+  color: #cf711f;
+  background-color: #fff;
+}
+
+.main-nav-link.nav-cta:focus {
+  color: #cf711f;
+  background-color: #F5E6DA
 }
 
 /* MOBILE */
@@ -595,7 +608,7 @@
 
 .footer {
   padding: 12.8rem 0;
-  border-top: 1px solid #eee;
+  border-top: 2px solid #eee;
 }
 
 .grid--footer {

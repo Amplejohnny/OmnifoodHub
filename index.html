@@ -203,7 +203,7 @@
       </section>
 
       <section class="section-meals" id="meals">
-        <div class="container center-text">
+        <div class="container">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">
             Omnifood AI chooses from 5,000+ recipes
@@ -594,18 +594,18 @@
 
               <form class="cta-form" name="sign-up" netlify>
                 <div>
-                  <label for="full-name">Full Name</label>
+                  <label for="full-name">Full Name:</label>
                   <input
                     id="full-name"
                     type="text"
-                    placeholder="John Smith"
+                    placeholder="John Doe"
                     name="full-name"
                     required
                   />
                 </div>
 
                 <div>
-                  <label for="email">Email address</label>
+                  <label for="email">Email address:</label>
                   <input
                     id="email"
                     type="email"
@@ -618,7 +618,9 @@
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
                   <select id="select-where" name="select-where" required>
-                    <option value="">Please choose one option:</option>
+                    <option value="" disabled selected>
+                      Choose one option
+                    </option>
                     <option value="friends">Friends and family</option>
                     <option value="youtube">YouTube video</option>
                     <option value="podcast">Podcast</option>
@@ -628,9 +630,6 @@
                 </div>
 
                 <button type="submit" class="btn btn--form">Sign up now</button>
-
-                <!-- <input type="checkbox" />
-                <input type="number" /> -->
               </form>
             </div>
             <div
