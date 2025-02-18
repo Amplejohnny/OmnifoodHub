@@ -1,6 +1,7 @@
 {
   "name": "Omni Foods",
-  "short_name": "Omni",
+  "short_name": "OmniEat",
+  "description": "OmniEat is a food delivery service that allows you to order food from your favorite restaurants and have it delivered to your door.",
   "icons": [
     {
       "src": "img/favicon/android-chrome-192x192.png",
@@ -13,7 +14,23 @@
       "type": "image/png"
     }
   ],
+  "screenshots": [
+    {
+      "src": "/img/favicon/screenshot-mobile.jpg",
+      "sizes": "1080x2287",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/img/favicon/screenshot-desktop.png",
+      "sizes": "1366x608",
+      "type": "image/png"
+    }
+  ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "start_url": "/index.html",
+  "scope": "/",
+  "orientation": "portrait",
+  "id": "/index.html"
 }
